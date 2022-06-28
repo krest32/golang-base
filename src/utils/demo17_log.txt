@@ -1,0 +1,2 @@
+2021/10/09 17:20:08.991582 D:/Project/go/Go-Guide/src/day6-lib/Log/demo17-Log.go:55: 这是一条很普通的日志。
+[小王子]2021/10/09 17:20:09.054578 D:/Project/go/Go-Guide/src/day6-lib/Log/demo17-Log.go:57: 这是一条很普通的日志。
