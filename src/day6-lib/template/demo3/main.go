@@ -15,8 +15,8 @@ type UserInfo struct {
 
 func tmplDemo(w http.ResponseWriter, r *http.Request) {
 	// 解析两个tmpl文件
-	tmpl, err := template.ParseFiles("src/day6-lib/template/demo03-slice-变量类型/t.tmpl",
-		"src/day6-lib/template/demo03-slice-变量类型/ul.tmpl")
+	tmpl, err := template.ParseFiles("src/day6-lib/template/demo03-variable-type-slice-变量类型/t.tmpl",
+		"src/day6-lib/template/demo03-variable-type-slice-变量类型/ul.tmpl")
 	if err != nil {
 		fmt.Println("create template failed, err:", err)
 		return

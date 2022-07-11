@@ -13,7 +13,7 @@ func main() {
 			return template.HTML(str)
 		},
 	})
-	router.LoadHTMLFiles("src/day12-gin/demo03/index.tmpl")
+	router.LoadHTMLFiles("src/day12-gin/demo03-variable-type/index.tmpl")
 
 	router.GET("/index", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.tmpl", "<a href='https://liwenzhou.com'>李文周的博客</a>")

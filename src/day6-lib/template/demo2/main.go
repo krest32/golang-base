@@ -14,7 +14,7 @@ type UserInfo struct {
 
 func sayHello(w http.ResponseWriter, r *http.Request){
 	// 解析指定文件生成模版对象
-	tmpl, err := template.ParseFiles("src/day6-lib/template/demo02-%s %d-string/demo.tmpl")
+	tmpl, err := template.ParseFiles("src/day6-lib/template/demo02-variable-%s %d-string/demo.tmpl")
 	if err != nil {
 		fmt.Println("create template failed, err:", err)
 		return
