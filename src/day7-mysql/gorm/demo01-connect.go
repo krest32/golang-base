@@ -16,7 +16,7 @@ const (
 )
 
 func main() {
-	path := strings.Join([]string{userName, ":", password, "@tcp-01(",ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
+	path := strings.Join([]string{userName, ":", password, "@tcp-01-basic(",ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
 	db, err := gorm.Open("mysql", path)
 	if err != nil {
 		fmt.Printf("connect DB failed, err:%v\n", err)

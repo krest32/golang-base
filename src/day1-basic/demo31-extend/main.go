@@ -12,11 +12,12 @@ type DivideError struct {
 
 // 实现 `error` 接口
 func (de DivideError) Error() string {
+
 	strFormat := `
     Cannot proceed, the divider is zero.
     dividee: %d
     divider: 0
-`
+	`
 	return fmt.Sprintf(strFormat, de.dividee)
 }
 

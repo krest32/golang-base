@@ -6,7 +6,7 @@ import (
 	"net"
 )
 
-// tcp-01/server/main.go
+// tcp-01-basic/server/main.go
 
 // TCP server端
 
@@ -28,7 +28,7 @@ func process(conn net.Conn) {
 }
 
 func main() {
-	listen, err := net.Listen("tcp-01", "127.0.0.1:20000")
+	listen, err := net.Listen("tcp-01-basic", "127.0.0.1:20000")
 	if err != nil {
 		fmt.Println("listen failed, err:", err)
 		return

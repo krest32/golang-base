@@ -15,6 +15,7 @@ func fibo(n int, c chan int) {
 }
 
 func main() {
+	// 定义一个通道，缓存大小为10
 	c := make(chan int, 10)
 	go fibo(cap(c), c)
 	// range 函数遍历每个从通道接收到的数据，因为 c 在发送完 10 个

@@ -20,8 +20,8 @@ var DB *sql.DB
 
 //注意方法名大写，就是public
 func InitDB()  {
-	//构建连接："用户名:密码@tcp-01(IP:端口)/数据库?charset=utf8"
-	path := strings.Join([]string{userName, ":", password, "@tcp-01(",ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
+	//构建连接："用户名:密码@tcp-01-basic(IP:端口)/数据库?charset=utf8"
+	path := strings.Join([]string{userName, ":", password, "@tcp-01-basic(",ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
 	//打开数据库,前者是驱动名，所以要导入： _ "github.com/go-sql-driver/day7-mysql"
 	DB, _ = sql.Open("mysql", path)
 	//设置数据库最大连接数

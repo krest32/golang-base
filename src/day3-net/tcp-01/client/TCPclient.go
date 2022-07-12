@@ -10,7 +10,7 @@ import (
 
 // 客户端
 func main() {
-	conn, err := net.Dial("tcp-01", "127.0.0.1:20000")
+	conn, err := net.Dial("tcp-01-basic", "127.0.0.1:20000")
 	if err != nil {
 		fmt.Println("err :", err)
 		return

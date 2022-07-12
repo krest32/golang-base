@@ -20,8 +20,8 @@ const (
 )
 
 func initDB() (err error) {
-	//构建连接："用户名:密码@tcp-01(IP:端口)/数据库?charset=utf8"
-	path := strings.Join([]string{userName, ":", password, "@tcp-01(",ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
+	//构建连接："用户名:密码@tcp-01-basic(IP:端口)/数据库?charset=utf8"
+	path := strings.Join([]string{userName, ":", password, "@tcp-01-basic(",ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
 	// 也可以使用MustConnect连接不成功就panic
 	db, err = sqlx.Connect("mysql", path)
 	if err != nil {

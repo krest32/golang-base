@@ -19,9 +19,9 @@ type Request struct {
 }
 func main()  {
 	var responseTxt string
-	filePath := "src/day6-lib/Ini/02-指针调用-defer & lock-util/requestBody.txt"
-	iniFile := "src/day6-lib/Ini/02-指针调用-defer & lock-util/config.ini"
-	writeFilePath := "src/day6-lib/Ini/02-指针调用-defer & lock-util/response.txt"
+	filePath := "src/day6-lib/Ini/02-point-指针调用-defer & lock-util/requestBody.txt"
+	iniFile := "src/day6-lib/Ini/02-point-指针调用-defer & lock-util/config.ini"
+	writeFilePath := "src/day6-lib/Ini/02-point-指针调用-defer & lock-util/response.txt"
 	res := Util(filePath,iniFile)
 	if strings.EqualFold(res.method,"post") {
 		responseTxt = post(&res)

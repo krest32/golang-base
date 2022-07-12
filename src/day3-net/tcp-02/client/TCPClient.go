@@ -26,7 +26,7 @@ func process4(conn net.Conn) {
 
 func main() {
 
-	listen, err := net.Listen("tcp-01", "127.0.0.1:30000")
+	listen, err := net.Listen("tcp-01-basic", "127.0.0.1:30000")
 	if err != nil {
 		fmt.Println("listen failed, err:", err)
 		return
